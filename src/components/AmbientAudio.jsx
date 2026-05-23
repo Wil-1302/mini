@@ -56,7 +56,7 @@ export default function AmbientAudio() {
 
   return (
     <>
-      <audio ref={audioRef} src="/aea.mp3" preload="auto" />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}aea.mp3`} preload="auto" />
 
       <div
         className="fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full border border-gold/15 px-2 py-1.5 backdrop-blur-md sm:bottom-6 sm:right-6"
